@@ -247,34 +247,37 @@ export default function Portfolio() {
     {
       title: "Programming Languages",
       skills: [
-        { name: "JavaScript", icon: <Code className="w-6 h-6" /> },
-        { name: "TypeScript", icon: <Code className="w-6 h-6" /> },
+        { name: "C++", icon: <Code className="w-6 h-6" /> },
+        { name: "JavaScript(Node.js, React.js, Next.js)", icon: <Code className="w-6 h-6" /> },
         { name: "Python", icon: <Code className="w-6 h-6" /> },
         { name: "Java", icon: <Code className="w-6 h-6" /> },
-        { name: "C++", icon: <Code className="w-6 h-6" /> },
-        { name: "Go", icon: <Code className="w-6 h-6" /> },
+        { name: "HTML", icon: <Code className="w-6 h-6" /> },
+        { name: "CSS", icon: <Code className="w-6 h-6" /> },
+        { name: "MySQL", icon: <Code className="w-6 h-6" /> },
+        { name: "C", icon: <Code className="w-6 h-6" /> },
       ],
     },
     {
       title: "Core Subjects",
       skills: [
-        { name: "React", icon: <Globe className="w-6 h-6" /> },
-        { name: "Next.js", icon: <Globe className="w-6 h-6" /> },
-        { name: "Node.js", icon: <Code className="w-6 h-6" /> },
-        { name: "Express.js", icon: <Code className="w-6 h-6" /> },
-        { name: "MongoDB", icon: <Code className="w-6 h-6" /> },
-        { name: "PostgreSQL", icon: <Code className="w-6 h-6" /> },
+        { name: "OOPS", icon: <Globe className="w-6 h-6" /> },
+        { name: "Computer Networks", icon: <Globe className="w-6 h-6" /> },
+        { name: "Operating Systems", icon: <Globe className="w-6 h-6" /> },
+        { name: "Computer Architecture", icon: <Globe className="w-6 h-6" /> },
+        { name: "DSA", icon: <Code className="w-6 h-6" /> },
+        { name: "DBMS", icon: <Globe className="w-6 h-6" /> },
       ],
     },
     {
-      title: "Other",
+      title: "Others",
       skills: [
-        { name: "Tailwind CSS", icon: <Palette className="w-6 h-6" /> },
-        { name: "Figma", icon: <Palette className="w-6 h-6" /> },
-        { name: "Docker", icon: <Code className="w-6 h-6" /> },
+        { name: "Github", icon: <Globe className="w-6 h-6" /> },
+        { name: "Matlab", icon: <Globe className="w-6 h-6" /> },
         { name: "AWS", icon: <Globe className="w-6 h-6" /> },
-        { name: "Git", icon: <Code className="w-6 h-6" /> },
-        { name: "Mobile Development", icon: <Smartphone className="w-6 h-6" /> },
+        { name: "Extensible Markup language(XML)", icon: <Code className="w-6 h-6" /> },
+        { name: "Git", icon: <Globe className="w-6 h-6" /> },
+        { name: "RStudio", icon: <Smartphone className="w-6 h-6" /> },
+        { name: "Assembly language", icon: <Code className="w-6 h-6" /> },
       ],
     },
   ]
@@ -391,7 +394,7 @@ export default function Portfolio() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 1 }}
             >
-              Hi, I'm{" "}
+              {" "}
               <motion.span
                 className="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent"
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -408,7 +411,7 @@ export default function Portfolio() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              Computer Science Student & Aspiring Full Stack Developer
+              Programmer • Full Stack Developer • Aspiring AI enthusiast
             </motion.p>
 
             <motion.div
@@ -417,17 +420,20 @@ export default function Portfolio() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              <Button
-                onClick={() => scrollToSection("projects")}
-                className="bg-white text-blue-700 hover:bg-blue-50 px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 pointer-events-auto"
+              <motion.div
                 whileHover={{
                   scale: 1.05,
                   boxShadow: "0 20px 25px -5px rgba(255, 255, 255, 0.3)",
                 }}
                 whileTap={{ scale: 0.95 }}
               >
-                View My Work
-              </Button>
+                <Button
+                  onClick={() => scrollToSection("projects")}
+                  className="bg-white text-blue-700 hover:bg-blue-50 px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 pointer-events-auto"
+                >
+                  View My Work
+                </Button>
+              </motion.div>
             </motion.div>
           </motion.div>
         </div>
@@ -456,8 +462,8 @@ export default function Portfolio() {
             >
               <h3 className="text-2xl font-semibold mb-6">Passionate Developer</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                I'm a passionate computer science student in my 3rd year, eager to dive into the world of software
-                development. I love learning new technologies and building projects that solve real-world problems.
+              I'm a passionate Information Technology student, eager to dive into the world of software
+              development. I love learning new technologies and building projects that solve real-world problems.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 When I'm not studying or coding, you can find me exploring the latest tech trends, participating in
@@ -467,15 +473,15 @@ export default function Portfolio() {
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center space-x-2">
                   <MapPin className="w-5 h-5 text-blue-600" />
-                  <span>San Francisco, CA</span>
+                  <span>Ahmedabad, Gujarat</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="w-5 h-5 text-blue-600" />
-                  <span>john@example.com</span>
+                  <span>patelpurv908@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone className="w-5 h-5 text-blue-600" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+91 7383631475</span>
                 </div>
               </div>
             </motion.div>
@@ -490,21 +496,27 @@ export default function Portfolio() {
               <Card className="p-6 hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-0">
                   <h4 className="text-xl font-semibold mb-3">Education</h4>
-                  <p className="text-gray-600">3rd Year Computer Science Student</p>
-                </CardContent>
-              </Card>
-
-              <Card className="p-6 hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-0">
-                  <h4 className="text-xl font-semibold mb-3">Academic Projects</h4>
-                  <p className="text-gray-600">15+ university & personal projects</p>
+                  <p className="text-gray-600">VIT Vellore, 2023-202</p>
                 </CardContent>
               </Card>
 
               <Card className="p-6 hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-0">
                   <h4 className="text-xl font-semibold mb-3">Learning Focus</h4>
-                  <p className="text-gray-600">Full-stack development & modern frameworks</p>
+                  <p className="text-gray-600">Full-stack development, Problem Solving, Modern AI technologies</p>
+                </CardContent>
+              </Card>
+              
+              {/* <Card className="p-6 hover:shadow-lg transition-shadow duration-300">
+                <CardContent className="p-0">
+                  <h4 className="text-xl font-semibold mb-3">Academic Projects</h4>
+                  <p className="text-gray-600">15+ university & personal projects</p>
+                </CardContent> */}
+
+              <Card className="p-6 hover:shadow-lg transition-shadow duration-300">
+                <CardContent className="p-0">
+                  <h4 className="text-xl font-semibold mb-3">Hobbies</h4>
+                  <p className="text-gray-600">Music, Coding, Travelling, Volleyball, Trekking</p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -668,19 +680,23 @@ export default function Portfolio() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                <Button
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center space-x-2"
+                <motion.div
                   whileHover={{
                     scale: 1.05,
                     boxShadow: "0 20px 25px -5px rgba(59, 130, 246, 0.3)",
                   }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Download className="w-5 h-5" />
-                  <span>Download Resume</span>
-                </Button>
+                  <Button
+                    className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center space-x-2"
+                    onClick={() => window.open('https://drive.google.com/file/d/11zKkQxvmbHQlYbHvpcYC6rLUWhpKJ3QE/view', '_blank')}
+                  >
+                    <Download className="w-5 h-5" />
+                    <span>Download Resume</span>
+                  </Button>
+                </motion.div>
 
-                <p className="text-sm text-gray-500">PDF • 2 pages • Last updated: Jan 2025</p>
+                <p className="text-sm text-gray-500">PDF • 1 page(s) • Last updated: Nov 2024</p>
               </motion.div>
             </motion.div>
           </div>
@@ -832,7 +848,7 @@ export default function Portfolio() {
                   <div>
                     <p className="font-semibold group-hover:text-blue-600 transition-colors duration-300">Email</p>
                     <p className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300">
-                      john@example.com
+                    patelpurv908@gmail.com
                     </p>
                   </div>
                 </motion.div>
@@ -863,7 +879,7 @@ export default function Portfolio() {
                   <div>
                     <p className="font-semibold group-hover:text-blue-600 transition-colors duration-300">Phone</p>
                     <p className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300">
-                      +1 (555) 123-4567
+                      +91 73836 31475
                     </p>
                   </div>
                 </motion.div>
@@ -894,7 +910,7 @@ export default function Portfolio() {
                   <div>
                     <p className="font-semibold group-hover:text-blue-600 transition-colors duration-300">Location</p>
                     <p className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300">
-                      San Francisco, CA
+                      Ahmedabad, Gujarat
                     </p>
                   </div>
                 </motion.div>
@@ -930,6 +946,8 @@ export default function Portfolio() {
                     size="icon"
                     variant="outline"
                     className="hover:bg-blue-600 hover:text-white transition-colors bg-transparent hover:border-blue-600"
+                    onClick={() => window.open('https://github.com/Purv007', '_blank')}
+
                   >
                     <Github className="w-5 h-5" />
                   </Button>
@@ -946,6 +964,7 @@ export default function Portfolio() {
                     size="icon"
                     variant="outline"
                     className="hover:bg-blue-600 hover:text-white transition-colors bg-transparent hover:border-blue-600"
+                    onClick={() => window.open('https://www.linkedin.com/in/purv-patel-b31a84280/', '_blank')}
                   >
                     <Linkedin className="w-5 h-5" />
                   </Button>
@@ -962,6 +981,8 @@ export default function Portfolio() {
                     size="icon"
                     variant="outline"
                     className="hover:bg-blue-600 hover:text-white transition-colors bg-transparent hover:border-blue-600"
+                    onClick={() => window.open('mailto:patelpurv908@gmail.com', '_blank')}
+
                   >
                     <Mail className="w-5 h-5" />
                   </Button>
@@ -975,7 +996,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p>&copy; 2024 John Doe. All rights reserved.</p>
+          <p>&copy; 2025 Purv Patel. All rights reserved.</p>
         </div>
       </footer>
     </motion.div>
