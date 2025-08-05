@@ -496,7 +496,7 @@ export default function Portfolio() {
               <Card className="p-6 hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-0">
                   <h4 className="text-xl font-semibold mb-3">Education</h4>
-                  <p className="text-gray-600">VIT Vellore, 2023-202</p>
+                  <p className="text-gray-600">VIT Vellore, 2023-2027</p>
                 </CardContent>
               </Card>
 
